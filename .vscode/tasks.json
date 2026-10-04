@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake Build (oneAPI)",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "\"C:\\Program Files (x86)\\Intel\\oneAPI\\setvars.bat\" && cmake -B build -G \"NMake Makefiles\" -DCMAKE_CXX_COMPILER=icpx && cmake --build build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

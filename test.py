@@ -70,7 +70,7 @@ def update(step):
         bodies[body]["force"][2] = 0.0
 
 pl.add_timer_event(max_steps = 8000, duration=16, callback=update)
-
+# cap at 60 fps
 pl.reset_camera()
 pl.camera.zoom(0.8)
 
